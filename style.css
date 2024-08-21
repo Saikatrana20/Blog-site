@@ -11,6 +11,25 @@ body {
     color: #fff;
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #232830;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(101, 97, 97);
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #909090;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -29,8 +48,6 @@ li {
 
 .navlink li {
     display: inline-block;
-    /* align-items: center;
-justify-content: space-evenly; */
     text-decoration: none;
     margin-right: 20px;
 }
@@ -40,11 +57,10 @@ justify-content: space-evenly; */
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    /* text-align: left; */
+
 
 }
 
-/* HOVER */
 .navlink :hover {
     color: #FF7575;
     transition: 0.7s ease;
@@ -84,7 +100,6 @@ justify-content: space-evenly; */
     color: #FF7575;
     padding: 40px 0px 17px 0px;
 
-    /* text-align: left; */
 }
 
 .heading> :nth-child(2) {
@@ -92,7 +107,6 @@ justify-content: space-evenly; */
     font-size: 29px;
     font-weight: 400;
     line-height: 43.5px;
-    /* text-align: left; */
 
 }
 
@@ -100,8 +114,7 @@ header {
     padding: 0px 0px 99px 0px;
 }
 
-/* main {
-} */
+
 main {
     width: 100%;
 }
@@ -232,11 +245,11 @@ hr {
 .bottom_nav .active::before {
     content: '';
     position: absolute;
-    top: -17px; 
+    top: -17px;
     left: -10px;
     right: 0;
     margin: auto;
-    width: 54px; 
+    width: 54px;
     height: 2px;
     background-color: #FF7575;
 }
@@ -249,7 +262,7 @@ hr {
     padding: 36px 238px 127px 219px;
 }
 
-.footer_contain .fot{
+.footer_contain .fot {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -262,7 +275,8 @@ hr {
     line-height: 37.71px;
 }
 
-.footer_contain .fot .blue,.blue {
+.footer_contain .fot .blue,
+.blue {
     font-family: "Source Sans 3, sans-serif";
     font-size: 19px;
     font-weight: 600;
